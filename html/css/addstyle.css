@@ -82,10 +82,12 @@ html, body {
     position: absolute;
     width: 241px;
     height: 308px;
-    left: 85px;
-    top: 404px;
 
     background: #D9D9D9;
+}
+.addpic {
+    left: 85px;
+    top: 404px;
 }
 .plusicon {
     position: absolute;
@@ -143,4 +145,85 @@ html, body {
     top: 957px;
 
     background: #D9D9D9;
+}
+.fontsizeedit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.addtext {
+    position: absolute;
+    width: 107px;
+    height: 52px;
+    left: 27px;
+    top: 118px;
+}
+.deletetext {
+    position: absolute;
+    width: 159px;
+    height: 52px;
+    left: 141px;
+    top: 118px;
+}
+.confirmtext {
+    position: absolute;
+    width: 406px;
+    height: 58px;
+    left: 307px;
+    top: 118px;
+}
+.maintext {
+    position: absolute;
+    width: 119px;
+    height: 44px;
+    left: 67px;
+    top: 248px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.editpic1 {
+    left: 126px;
+    top: 333px;
+}
+.editpic2 {
+    left: 448px;
+    top: 333px;
+
+}
+.editpic3 {
+    left: 770px;
+    top: 333px;
+}
+.editpic4 {
+    left: 1092px;
+    top: 333px;
+}
+.gamenameedit {
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 94px;
+    top: 321px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
 }
