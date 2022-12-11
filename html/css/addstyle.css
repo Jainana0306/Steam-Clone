@@ -235,3 +235,154 @@ html, body {
     left: 241px;
     top: -41px;
 }
+
+.confirmpagename{
+    position: absolute;
+    height: 52px;
+    left: 1100px;
+    top: 26px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    z-index: 2;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.confirmname {
+    position: absolute;
+    width: 455px;
+    height: 71px;
+    left: 68px;
+    top: 115px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.gameborder1 {
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 68px;
+    top: 215px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.gameborder2 {
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 68px;
+    top: 512px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.gameborder-pic {
+    position: absolute;
+    width: 245px;
+    height: 225px;
+    left: 30px;
+    top: 21px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.price-border {
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 1040px;
+    top: 21px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+.font-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+.price-text {
+    position: absolute;
+    width: 161px;
+    height: 43px;
+    left: 17px;
+    top: 9px;
+
+    color: #000000;
+}
+.gamename-confirm {
+    position: absolute;
+    width: 158px;
+    height: 64px;
+    left: 332px;
+    top: 37px;
+}
+.confirm-gamedetail{
+    position: absolute;
+    width: 390px;
+    height: 89px;
+    left: 335px;
+    top: 115px;
+
+    color: #FFFFFF;
+}
+.total-text {
+    position: absolute;
+    width: 108px;
+    height: 56px;
+    left: 75px;
+    top: 831px;
+
+    color: #FFFFFF;
+}
+.totalprice-border {
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 183px;
+    top: 820px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.confirm-button {
+    position: absolute;
+    width: 229px;
+    height: 63px;
+    left: 1125px;
+    top: 824px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+.confirm-text {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    left: 12px;
+    top: 17px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
