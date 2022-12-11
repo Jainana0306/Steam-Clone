@@ -59,7 +59,7 @@ button:hover{
     width: 291px;
     height: 52px;
     left: 574px;
-    top: 0.2px;
+    top: 6px;
     display: inline-block;
     text-decoration: none;
     padding: 15px;
@@ -77,7 +77,7 @@ button:hover{
     width: 291px;
     height: 52px;
     left: 39px;
-    top: 1px;
+    top: 6px;
 
     /*text info*/
     font-family: Arial, Helvetica, sans-serif;
@@ -176,7 +176,7 @@ button:hover{
 
 }
 
-/*image background*/
+/*background*/
 .img-main{
     position: absolute;
     width: 1440px;
@@ -197,6 +197,24 @@ button:hover{
     height: 920px;
     left: 0px;
     top: 104px;
+}
+.Detail-BG-Rectangle{
+    position: absolute;
+    width: 1440px;
+    height: 408px;
+    left: 0px;
+    top: 99px;
+
+    background: #555555;
+}
+.Profile-BG-Rectangle{
+    position: absolute;
+    width: 1440px;
+    height: 523px;
+    left: 0px;
+    top: 501px;
+
+    background: #555555;
 }
 
 /*blur background*/
@@ -223,13 +241,15 @@ button:hover{
     /* Note: backdrop-filter has minimal browser support */
 }
 
+/**/
+
 
 
 /*text-games*/
 .Games-text{
     /* Games */
     position: absolute;
-    width: 119px;
+    width: 200px;
     height: 44px;
     left: 68px;
     top: 520px;
@@ -245,7 +265,103 @@ button:hover{
 
     color: #FFFFFF;
 }
+.Games-Rectangle-1{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 127px;
+    top: 599px;
 
+    background: #D9D9D9;
+}
+.Games-Rectangle-2{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 449px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-3{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 771px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-4{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 1093px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-Text-1{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 221px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-2{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 543px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-3{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 866px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-4{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 1188px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+}
 
 /*login*/
 .loginRectangle{
@@ -260,7 +376,24 @@ button:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
 }
+.login-Text{
+    /* LOGIN */
+    position: absolute;
+    width: 111px;
+    height: 44px;
+    left: 1300px;
+    top: 233px;
 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+color: #FFFFFF;
+}
 .loginText-username{
     /* USERNAME */
     position: absolute;
@@ -295,7 +428,22 @@ button:hover{
     color: #000000;
 
 }
+.loginText-forgot{
+    position: absolute;
+    width: 172px;
+    height: 23px;
+    left: 1267px;
+    top: 623px;
 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
 .login-input-username{
     box-sizing: border-box;
 
@@ -530,4 +678,181 @@ button:hover{
 
     color: #000000;
 
+}
+
+/*Detail-Games*/
+.Detail-Games-Rectangle{
+    position: absolute;
+    width: 319px;
+    height: 308px;
+    left: 113px;
+    top: 151px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.Detail-Games-Name{
+    position: absolute;
+    width: 201px;
+    height: 71px;
+    left: 479px;
+    top: 139px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Detail-Games-detail{
+    position: absolute;
+    width: 836px;
+    height: 217px;
+    left: 479px;
+    top: 242px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+/*System requirement*/
+.Detail-Games-Sys-Rec{
+    position: absolute;
+    width: 1301px;
+    height: 366px;
+    left: 67px;
+    top: 550px;
+
+    background: #F0F0F0;
+    border-radius: 50px;
+}
+.Detail-Games-Sys-Text{
+    position: absolute;
+    width: 376px;
+    height: 41px;
+    left: 116px;
+    top: 578px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #000000;
+}
+.Detail-Games-Sys-detail{
+    position: absolute;
+    width: 1160px;
+    height: 217px;
+    left: 137px;
+    top: 644px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+
+    color: #000000;
+
+}
+
+/*Profile*/
+.Profile-user-circle{
+    position: absolute;
+    width: 347px;
+    height: 347px;
+    left: 1014px;
+    top: 139px;
+    border-radius: 100%;
+
+    background: #555555;
+}
+.Profile-text-welcome{
+    position: absolute;
+    width: 209px;
+    height: 51px;
+    left: 307px;
+    top: 302px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+.Profile-text-username{
+    position: absolute;
+    width: 381px;
+    height: 74px;
+    left: 516px;
+    top: 260px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+
+}
+.Profile-text-register{
+    position: absolute;
+    width: 214px;
+    height: 32px;
+    left: 986px;
+    top: 502px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Profile-text{
+    position: absolute;
+    width: 106px;
+    height: 31px;
+    left: 1203px;
+    top: 503px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.Profile-text-login{
+    position: absolute;
+    width: 77px;
+    height: 29px;
+    left: 1312px;
+    top: 503px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
 }
