@@ -22,8 +22,7 @@ input[type = "submit"]{
     position: absolute;
     width: 185px;
     height: 47px;
-    left: 1042px;
-    top: 646px;
+    
 
     background: #FFFFFF;
     border-radius: 50px;
@@ -370,24 +369,50 @@ button:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
 }
-.Register-input-Username{
-    box-sizing: border-box;
+.RegisterText-create{
+    position: absolute;
+    width: 317px;
+    height: 44px;
+    left: 16px;
+    top: 155px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.RegisterText-tobe{
+    /* to be our Enemy */
 
     position: absolute;
-    width: 573px;
-    height: 47px;
-    left: 46px;
-    top: 336px;
+    width: 217px;
+    height: 34px;
+    left: 333px;
+    top: 198px;
 
-    border: 1px solid #000000;
-    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
 }
 .RegisterText-username{
     position: absolute;
     width: 133px;
     height: 25px;
     left: 19px;
-    top: 286px;
+    top: 283px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -398,8 +423,111 @@ button:hover{
     color: #000000;
 
 }
-.Register-input-username>input{
+.RegisterText-password{
+    position: absolute;
+    width: 143px;
+    height: 28px;
+    left: 19px;
+    top: 416px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.RegisterText-confirm{
+    position: absolute;
+    width: 260px;
+    height: 24px;
+    left: 19px;
+    top: 555px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.Register-input-Username{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 336px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-Username>input{
     flex-grow: 1;
     border: none;
     outline: none;
+}
+.Register-input-password{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 465px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-password>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.Register-input-confirm{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 604px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-confirm>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+/*button*/
+.register-button-rectangle{
+    position: absolute;
+    width: 185px;
+    height: 47px;
+    left: 240px;
+    top: 745px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+.register-button-text{
+    position: absolute;
+    width: 119px;
+    height: 22px;
+    left: 273px;
+    top: 755px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
 }
