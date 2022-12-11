@@ -53,6 +53,18 @@ button:hover{
     background: #000000;
 }
 
+/*User-Profile*/
+.User-circle{
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    left: 1337px;
+    top: 14px;
+    border-radius: 100%;
+
+    background: #555555;
+}
+
 /*text-topbar*/
 .SteamCloneTop{
     position: absolute;
@@ -174,6 +186,13 @@ button:hover{
     left: 205px;
     top: 967px;
 
+}
+.bottomBar-logout{
+    position: absolute;
+    width: 77px;
+    height: 61px;
+    left: 1340px;
+    top: 967px;
 }
 
 /*background*/
