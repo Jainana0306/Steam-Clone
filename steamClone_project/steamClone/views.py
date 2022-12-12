@@ -24,3 +24,11 @@ def register(request):
     # else:
     #     form = UserRegisterForm()
     return render(request, 'steamClone/Register.html')  # , {'form': form}
+
+
+def profile(request):
+    return render(request, 'steamClone/Profile-Login.html')
+
+
+def cart(request):
+    return render(request, 'steamClone/Cart-Login.html')
