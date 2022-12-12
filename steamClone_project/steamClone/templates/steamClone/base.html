@@ -29,9 +29,9 @@
     <!--TopBar == header-->
     <area class="TopBar-area" />
     <header class="TopBar">
-      <a class="SteamCloneSide">SteamClone</a>
-      <a class="TopBar-login" href="Login.html">LOGIN</a>
-      <a class="TopBar-register" href="Register.html">REGISTER</a>
+      <a class="SteamCloneSide" href="{% url 'main' %}">SteamClone</a>
+      <a class="TopBar-login" href="{% url 'login' %}">LOGIN</a>
+      <a class="TopBar-register" href="{% url 'register' %}">REGISTER</a>
     </header>
 
     <div>

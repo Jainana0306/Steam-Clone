@@ -1,0 +1,44 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+<!--Background image-->
+<img class="img-login" src="{% static 'steamClone/res/LoginBG.png' %}" />
+<area class="login-blur" />
+<h1 class="login-Text">LOGIN</h1>
+
+<!--LoginBar-->
+<area class="loginRectangle" />
+<h1 class="loginText-username">USERNAME</h1>
+<div class="login-input-username">
+  <input
+    type="text"
+    name="q"
+    size="51"
+    class="form-control form-control-lg"
+    placeholder="Type username..."
+  />
+</div>
+<h1 class="loginText-password">PASSWORD</h1>
+<div class="login-input-password">
+  <input
+    type="text"
+    name="q"
+    size="51"
+    class="form-control form-control-lg"
+    placeholder="Type password..."
+  />
+</div>
+<a href="https://www.youtube.com/watch?v=QxKTOXfT1LQ"
+  ><h1 class="loginText-forgot">FORGOT PASSWORD?</h1></a
+>
+<input
+  type="submit"
+  name="btnK"
+  value="SIGN-IN"
+  class="login-button-rectangle"
+/>
+<!---->
+{% endblock content %}
