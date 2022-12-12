@@ -1,0 +1,388 @@
+html, body {
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+
+    z-index: 1;
+    background: #000000;
+}
+.menu-header{
+    position: absolute;
+    width: 291px;
+    height: 52px;
+    left: 39px;
+    top: 26px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    z-index: 2;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.pagename{
+    position: absolute;
+    height: 52px;
+    left: 1350px;
+    top: 26px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    z-index: 2;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.border{
+    position: absolute;
+    width: 632px;
+    height: 0px;
+    left: -16px;
+    top: 191.5px;
+
+    border: 10px solid #FFFFFF;
+    border-radius: 40px;
+}
+
+.gamename{
+    position: absolute;
+    width: 455px;
+    height: 71px;
+    left: 67px;
+    top: 264px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+}
+.content {
+    position: relative;
+    height: 920;
+}
+.gamepic {
+    position: absolute;
+    width: 241px;
+    height: 308px;
+
+    background: #D9D9D9;
+}
+.addpic {
+    left: 85px;
+    top: 404px;
+}
+.plusicon {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 133px;
+    top: 485px;
+}
+.gamedetail {
+    position: absolute;
+    width: 836px;
+    height: 217px;
+    left: 432px;
+    top: 449px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+.save-button {
+    position: absolute;
+    width: 185px;
+    height: 47px;
+    left: 1302px;
+    top: 882px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+.save {
+    position: absolute;
+    width: 119px;
+    height: 22px;
+    left: 1335px;
+    top: 892px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
+.under {
+    position: absolute;
+    width: 100%;
+    height: 67px;
+    left: 0px;
+    top: 957px;
+
+    background: #D9D9D9;
+}
+.fontsizeedit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.addtext {
+    position: absolute;
+    width: 107px;
+    height: 52px;
+    left: 27px;
+    top: 118px;
+}
+.deletetext {
+    position: absolute;
+    width: 159px;
+    height: 52px;
+    left: 141px;
+    top: 118px;
+}
+.confirmtext {
+    position: absolute;
+    width: 406px;
+    height: 58px;
+    left: 307px;
+    top: 118px;
+}
+.maintext {
+    position: absolute;
+    width: 119px;
+    height: 44px;
+    left: 67px;
+    top: 248px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.editpic1 {
+    left: 126px;
+    top: 333px;
+}
+.editpic2 {
+    left: 448px;
+    top: 333px;
+
+}
+.editpic3 {
+    left: 770px;
+    top: 333px;
+}
+.editpic4 {
+    left: 1092px;
+    top: 333px;
+}
+.gamenameedit {
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 94px;
+    top: 321px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.crosspic {
+    position: absolute;
+    width: 54px;
+    height: 53px;
+    left: 241px;
+    top: -41px;
+}
+
+.confirmpagename{
+    position: absolute;
+    height: 52px;
+    left: 1100px;
+    top: 26px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    z-index: 2;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.confirmname {
+    position: absolute;
+    width: 455px;
+    height: 71px;
+    left: 68px;
+    top: 115px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.gameborder1 {
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 68px;
+    top: 215px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.gameborder2 {
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 68px;
+    top: 512px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.gameborder-pic {
+    position: absolute;
+    width: 245px;
+    height: 225px;
+    left: 30px;
+    top: 21px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.price-border {
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 1040px;
+    top: 21px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+.font-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+.price-text {
+    position: absolute;
+    width: 161px;
+    height: 43px;
+    left: 17px;
+    top: 9px;
+
+    color: #000000;
+}
+.gamename-confirm {
+    position: absolute;
+    width: 158px;
+    height: 64px;
+    left: 332px;
+    top: 37px;
+}
+.confirm-gamedetail{
+    position: absolute;
+    width: 390px;
+    height: 89px;
+    left: 335px;
+    top: 115px;
+
+    color: #FFFFFF;
+}
+.total-text {
+    position: absolute;
+    width: 108px;
+    height: 56px;
+    left: 75px;
+    top: 831px;
+
+    color: #FFFFFF;
+}
+.totalprice-border {
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 183px;
+    top: 820px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.confirm-button {
+    position: absolute;
+    width: 229px;
+    height: 63px;
+    left: 1125px;
+    top: 824px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+.confirm-text {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    left: 12px;
+    top: 17px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}

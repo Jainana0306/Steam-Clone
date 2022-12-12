@@ -1,0 +1,25 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+<!--Background image-->
+<div class="img-login"></div>
+<img class="img-main" src="{% static 'steamClone/res/MainBG.webp' %}" />
+<area class="main-blur" />
+
+<!--Games-->
+<h1 class="Games-text">Games</h1>
+
+<!--Position การวางเกม-->
+<a href="Detail.html"><area class="Games-Rectangle-1" /></a>
+<a href="Detail.html"><h1 class="Games-Rectangle-Text-1">name</h1></a>
+<a href="Detail.html"><area class="Games-Rectangle-2" /></a>
+<a href="Detail.html"><h1 class="Games-Rectangle-Text-2">name</h1></a>
+<a href="Detail.html"><area class="Games-Rectangle-3" /></a>
+<a href="Detail.html"><h1 class="Games-Rectangle-Text-3">name</h1></a>
+<a href="Detail.html"><area class="Games-Rectangle-4" /></a>
+<a href="Detail.html"><h1 class="Games-Rectangle-Text-4">name</h1></a>
+<!---->
+{% endblock content %}

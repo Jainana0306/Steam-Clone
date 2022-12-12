@@ -1,0 +1,1106 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    background: #242424;
+
+}
+input{ 
+    font-size:1.3em; 
+    padding:0.5em;
+}
+input[type = "text"]{
+    border-radius: 22px;
+    background: #F0F0F0;
+    
+}
+input[type = "submit"]{
+    position: absolute;
+    width: 185px;
+    height: 47px;
+    
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+button:hover{
+    cursor: pointer;
+
+}
+
+/*basic of web*/
+/*Topbar rectangle*/
+.TopBar-area{
+    /* Rectangle 16 */
+    position: absolute;
+    width: 1440px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+
+}
+.TopBar{
+    width: 1440px;
+    left: 0px;
+    height: 104px;
+    top: 0px;
+    background: #000000;
+}
+
+/*User-Profile*/
+.User-circle{
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    left: 1337px;
+    top: 14px;
+    border-radius: 100%;
+
+    background: #555555;
+}
+
+/*text-topbar*/
+.SteamCloneTop{
+    position: absolute;
+    width: 291px;
+    height: 52px;
+    left: 574px;
+    top: 6px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+.SteamCloneSide{
+    /*position*/
+    position: absolute;
+    width: 291px;
+    height: 52px;
+    left: 39px;
+    top: 6px;
+
+    /*text info*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+
+    /* added by me */
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+.TopBar-login{
+    /* LOGIN */
+    position: absolute;
+    width: 74px;
+    height: 29px;
+    left: 1176px;
+    top: 20px;
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    /* added by me */
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+.TopBar-register{
+    /* REGISTER */
+    position: absolute;
+    width: 115px;
+    height: 29px;
+    left: 1280px;
+    top: 19px;
+    
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    /* added by me */
+    display: inline-block;
+    text-decoration: underline;
+    padding: 15px;
+
+    
+}
+
+/*BottomBar Rectangle*/
+.bottomBar{
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 957px;
+    margin-bottom: auto;
+
+    background: #D9D9D9;
+}
+
+/*Bottombar image*/
+.bottomBar-home{
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    left: 29px;
+    top: 965px;
+}
+.bottomBar-library{
+    position: absolute;
+    width: 77px;
+    height: 72px;
+    left: 117px;
+    top: 962px;
+}
+.bottomBar-cart{
+    position: absolute;
+    width: 76px;
+    height: 67px;
+    left: 205px;
+    top: 967px;
+
+}
+.bottomBar-logout{
+    position: absolute;
+    width: 77px;
+    height: 61px;
+    left: 1340px;
+    top: 967px;
+}
+
+/*background*/
+.img-main{
+    position: absolute;
+    width: 1440px;
+    height: 456px;
+    left: 0px;
+    top: 104px;
+}
+.img-login{
+    position: absolute;
+    width: 1440px;
+    height: 922px;
+    left: 0px;
+    top: 104px;
+}
+.img-register{
+    position: absolute;
+    width: 1440px;
+    height: 920px;
+    left: 0px;
+    top: 104px;
+}
+.Detail-BG-Rectangle{
+    position: absolute;
+    width: 1440px;
+    height: 408px;
+    left: 0px;
+    top: 99px;
+
+    background: #555555;
+}
+.Profile-BG-Rectangle{
+    position: absolute;
+    width: 1440px;
+    height: 523px;
+    left: 0px;
+    top: 501px;
+
+    background: #555555;
+}
+
+/*blur background*/
+.login-blur{
+    position: absolute;
+    width: 100vw;
+    height: 39px;
+    left: 0px;
+    top: 104px;
+
+    background: linear-gradient(180deg, #000000 0%, rgba(143, 143, 143, 0.0208333) 99.98%, rgba(143, 143, 143, 0.0208333) 99.99%, rgba(146, 146, 146, 0) 100%);
+    opacity: 0.8;
+    }
+.main-blur{
+    /* Rectangle 16 */
+    position: absolute;
+    width: 1440px;
+    height: 161px;
+    left: 0px;
+    top: 514px;
+
+    background: linear-gradient(180deg, #000000 0%, #242424 100%);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+/**/
+
+
+
+/*text-games*/
+.Games-text{
+    /* Games */
+    position: absolute;
+    width: 200px;
+    height: 44px;
+    left: 68px;
+    top: 520px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-1{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 127px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-2{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 449px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-3{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 771px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-4{
+    position: absolute;
+    width: 241px;
+    height: 308px;
+    left: 1093px;
+    top: 599px;
+
+    background: #D9D9D9;
+}
+.Games-Rectangle-Text-1{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 221px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-2{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 543px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-3{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 866px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.Games-Rectangle-Text-4{
+    position: absolute;
+    width: 52px;
+    height: 24px;
+    left: 1188px;
+    top: 908px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+}
+
+/*login*/
+.loginRectangle{
+    position: absolute;
+    width: 722px;
+    height: 470px;
+    left: 750px;
+    top: 305px;
+
+    background: #F0F0F0;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.login-Text{
+    /* LOGIN */
+    position: absolute;
+    width: 111px;
+    height: 44px;
+    left: 1300px;
+    top: 233px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+color: #FFFFFF;
+}
+.loginText-username{
+    /* USERNAME */
+    position: absolute;
+    width: 134px;
+    height: 25px;
+    left: 821px;
+    top: 378px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.loginText-password{
+    /* PASSWORD */
+
+    position: absolute;
+    width: 134px;
+    height: 28px;
+    left: 821px;
+    top: 512px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+.loginText-forgot{
+    position: absolute;
+    width: 172px;
+    height: 23px;
+    left: 1267px;
+    top: 623px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+.login-input-username{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 848px;
+    top: 428px;
+
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+.login-input-username>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.login-input-password{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 848px;
+    top: 567px;
+
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+.login-input-password>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.login-button-rectangle{
+    position: absolute;
+    width: 185px;
+    height: 47px;
+    left: 1042px;
+    top: 646px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.login-button-text{
+    position: absolute;
+    width: 89px;
+    height: 22px;
+    left: 1090px;
+    top: 656px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+/*Register*/
+.Register-Rectangle{
+    position: absolute;
+    width: 722px;
+    height: 572px;
+    left: -28px;
+    top: 250px;
+
+    background: #F0F0F0;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.RegisterText-create{
+    position: absolute;
+    width: 317px;
+    height: 44px;
+    left: 16px;
+    top: 155px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.RegisterText-tobe{
+    /* to be our Enemy */
+
+    position: absolute;
+    width: 217px;
+    height: 34px;
+    left: 333px;
+    top: 198px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+}
+.RegisterText-username{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 19px;
+    top: 283px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+.RegisterText-password{
+    position: absolute;
+    width: 143px;
+    height: 28px;
+    left: 19px;
+    top: 416px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.RegisterText-confirm{
+    position: absolute;
+    width: 260px;
+    height: 24px;
+    left: 19px;
+    top: 555px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.Register-input-Username{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 336px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-Username>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.Register-input-password{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 465px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-password>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.Register-input-confirm{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 567px;
+    height: 47px;
+    left: 46px;
+    top: 604px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+.Register-input-confirm>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+/*button*/
+.register-button-rectangle{
+    position: absolute;
+    width: 185px;
+    height: 47px;
+    left: 235px;
+    top: 720px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+.register-button-text{
+    position: absolute;
+    width: 119px;
+    height: 22px;
+    left: 273px;
+    top: 755px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+
+/*Detail-Games*/
+.Detail-Games-Rectangle{
+    position: absolute;
+    width: 319px;
+    height: 308px;
+    left: 113px;
+    top: 151px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.Detail-Games-Name{
+    position: absolute;
+    width: 201px;
+    height: 71px;
+    left: 479px;
+    top: 139px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Detail-Games-detail{
+    position: absolute;
+    width: 836px;
+    height: 217px;
+    left: 479px;
+    top: 242px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+/*System requirement*/
+.Detail-Games-Sys-Rec{
+    position: absolute;
+    width: 1301px;
+    height: 366px;
+    left: 67px;
+    top: 550px;
+
+    background: #F0F0F0;
+    border-radius: 50px;
+}
+.Detail-Games-Sys-Text{
+    position: absolute;
+    width: 376px;
+    height: 41px;
+    left: 116px;
+    top: 578px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #000000;
+}
+.Detail-Games-Sys-detail{
+    position: absolute;
+    width: 1160px;
+    height: 217px;
+    left: 137px;
+    top: 644px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+
+    color: #000000;
+
+}
+
+/*Profile*/
+.Profile-user-circle{
+    position: absolute;
+    width: 347px;
+    height: 347px;
+    left: 1014px;
+    top: 139px;
+    border-radius: 100%;
+
+    background: #555555;
+}
+.Profile-text-welcome{
+    position: absolute;
+    width: 209px;
+    height: 51px;
+    left: 307px;
+    top: 302px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+.Profile-text-username{
+    position: absolute;
+    width: 381px;
+    height: 74px;
+    left: 516px;
+    top: 260px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+
+}
+.Profile-text-register{
+    position: absolute;
+    width: 214px;
+    height: 32px;
+    left: 986px;
+    top: 502px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Profile-text{
+    position: absolute;
+    width: 106px;
+    height: 31px;
+    left: 1203px;
+    top: 503px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.Profile-text-login{
+    position: absolute;
+    width: 77px;
+    height: 29px;
+    left: 1312px;
+    top: 503px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+/*Cart*/
+.Cart-text{
+    position: absolute;
+    width: 223px;
+    height: 42px;
+    left: 102px;
+    top: 173px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Cart-text-center{
+    position: absolute;
+    width: 509px;
+    height: 58px;
+    left: 463px;
+    top: 466px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+.Cart-register{
+    position: absolute;
+    width: 350px;
+    height: 58px;
+    left: 380px;
+    top: 524px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Cart-text-center-between{
+    position: absolute;
+    width: 212px;
+    height: 58px;
+    left: 735px;
+    top: 524px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+.Cart-login{
+    position: absolute;
+    width: 147px;
+    height: 58px;
+    left: 917px;
+    top: 524px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+/*Cart-game1*/
+.Cart-Games-Rec-1{
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 102px;
+    top: 254px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.Cart-Games-Pics-1{
+    position: absolute;
+    width: 245px;
+    height: 225px;
+    left: 148px;
+    top: 275px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.Cart-Games-Name-1{
+    position: absolute;
+    width: 158px;
+    height: 64px;
+    left: 452px;
+    top: 333px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+}
+.Cart-Games-PriceRec-1{
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 1142px;
+    top: 275px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+.Cart-Games-PriceText-1{
+    position: absolute;
+    width: 161px;
+    height: 43px;
+    left: 1165px;
+    top: 269px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+
+    color: #000000;
+}
+.Cart-Games-Close-1{
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    left: 109px;
+    top: 264px;
+}
+
+.Cart-Games-Rec-2{
+    position: absolute;
+    width: 1253px;
+    height: 268px;
+    left: 102px;
+    top: 589px;
+
+    background: #555555;
+    border-radius: 15px;
+}
+.Cart-Games-Pics-2{
+    position: absolute;
+    width: 245px;
+    height: 225px;
+    left: 148px;
+    top: 610px;
+
+    background: #F5F5F5;
+    border-radius: 15px;
+}
+.Cart-Games-Name-2{
+    position: absolute;
+    width: 158px;
+    height: 64px;
+    left: 452px;
+    top: 668px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.Cart-Games-PriceRec-2{
+    position: absolute;
+    width: 195px;
+    height: 62px;
+    left: 1142px;
+    top: 610px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+.Cart-Games-PriceText-2{
+    position: absolute;
+    width: 161px;
+    height: 43px;
+    left: 1165px;
+    top: 604px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+
+    color: #000000;
+}
+.Cart-Games-Close-2{
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    left: 109px;
+    top: 599px;
+}
