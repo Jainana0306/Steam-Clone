@@ -2,7 +2,10 @@
 *.log
 *.pot
 *.pyc
-__pycache__
+__pycache__/
+
+/steamClone_project/steamClone_project/__pycache__/
+/steamClone_project/steamClone/__pycache__/
 db.sqlite3
 media
 
