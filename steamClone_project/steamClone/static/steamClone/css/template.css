@@ -65,6 +65,17 @@ button:hover{
     background: #555555;
 }
 
+.BG-Rect{
+    position: absolute;
+    background: #242424;
+    width: 1440px;
+    height: 920px;
+    top: 105;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
 /*text-topbar*/
 .SteamCloneTop{
     position: absolute;
