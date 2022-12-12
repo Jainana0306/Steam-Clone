@@ -21,17 +21,10 @@ class GameForm(forms.ModelForm):
 
 
 class UserRegisterForm(UserCreationForm):
-    email = forms.EmailField()
-    first_name = forms.CharField()
-    last_name = forms.CharField()
 
     class Meta:
         model = User
-        fields = ['username', 'first_name', 'last_name',
-                  'email', 'password1', 'password2']
+        fields = ['username', 'password1', 'password2']
 
     def __init__(self, *args, **kwargs):
         super(UserRegisterForm, self).__init__(*args, **kwargs)
-        self.fields['first_name'].required = False
-        self.fields['last_name'].required = False
-        self.fields['email'].required = False

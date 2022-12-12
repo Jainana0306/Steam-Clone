@@ -5,6 +5,7 @@
 {% block content %}
 <!---->
 <!--Background image-->
+<area class="BG-Rect">
 <img class="img-login" src="{% static 'steamClone/res/RegisterBG.png' %}" />
 
 <!--Register text-->
@@ -18,7 +19,7 @@
 <div class="Register-input-Username">
   <input
     type="text"
-    name="q"
+    name="username"
     size="51"
     class="form-control form-control-lg"
     placeholder="Type username..."
@@ -29,7 +30,7 @@
 <div class="Register-input-password">
   <input
     type="text"
-    name="q"
+    name="password"
     size="51"
     class="form-control form-control-lg"
     placeholder="Type password..."
@@ -40,7 +41,7 @@
 <div class="Register-input-confirm">
   <input
     type="text"
-    name="q"
+    name="confirm"
     size="51"
     class="form-control form-control-lg"
     placeholder="Type password again..."
