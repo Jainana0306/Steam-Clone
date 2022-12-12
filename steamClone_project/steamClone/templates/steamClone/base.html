@@ -30,8 +30,17 @@
     <area class="TopBar-area" />
     <header class="TopBar">
       <a class="SteamCloneSide" href="{% url 'main' %}">SteamClone</a>
+      {% if user.is_authenticated %}
+      <!--output userProfile when is authenticated-->
+      <a class="User-circle" href="{% url 'profile' %}"
+        ><area class="User-circle"
+      /></a>
+
+      {% else %}
+      <!--output login and register when not login-->
       <a class="TopBar-login" href="{% url 'login' %}">LOGIN</a>
       <a class="TopBar-register" href="{% url 'register' %}">REGISTER</a>
+      {% endif %}
     </header>
 
     <div>
@@ -46,15 +55,22 @@
     <!--BottomBar == footer-->
     <area class="bottomBar" />
     <footer>
-      <a class="bottomBar-home"
+      <a class="bottomBar-home" href="{%  url 'main' %}"
         ><img src="{% static 'steamClone/res/Home.png' %}"
       /></a>
-      <a class="bottomBar-library" href="Profile.html"
+      <a class="bottomBar-library" href="{% url 'profile' %}"
         ><img src="{% static 'steamClone/res/Library.png' %}"
       /></a>
       <a class="bottomBar-cart" href="Cart.html"
         ><img src="{% static 'steamClone/res/Cart.png' %}"
       /></a>
+
+      {% if user.is_authenticated %}
+      <!--output logout when authenticated-->
+      <a class="bottomBar-logout" href="{% url 'main' %}"
+        ><img src="{% static 'steamClone/res/Logout.png' %}"
+      /></a>
+      {% endif %}
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
