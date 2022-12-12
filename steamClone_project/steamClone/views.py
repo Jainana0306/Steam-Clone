@@ -26,6 +26,7 @@ def register(request):
     return render(request, 'steamClone/Register.html')  # , {'form': form}
 
 
+@login_required()
 def profile(request):
     return render(request, 'steamClone/Profile-Login.html')
 
