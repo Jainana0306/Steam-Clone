@@ -6,8 +6,16 @@ body{
     margin: 0;
     padding: 0;
 
+}
+.BG-Rec{
+    position: absolute;
     background: #242424;
-
+    width: 1440px;
+    height: 1024px;
+    top: 105;
+    left: 0;
+    margin: 0;
+    padding: 0;
 }
 input{ 
     font-size:1.3em; 
@@ -16,7 +24,6 @@ input{
 input[type = "text"]{
     border-radius: 22px;
     background: #F0F0F0;
-    
 }
 input[type = "submit"]{
     position: absolute;
@@ -29,11 +36,11 @@ input[type = "submit"]{
 }
 button:hover{
     cursor: pointer;
-
 }
 
 /*basic of web*/
 /*Topbar rectangle*/
+
 .TopBar-area{
     /* Rectangle 16 */
     position: absolute;
