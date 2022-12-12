@@ -1,0 +1,24 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+<header class="header">
+    <a class="menu-header" href="{% url 'main' %}">SteamClone</a>
+    <a class="pagename">Add</a>
+</header>
+<div class="content">
+
+    <div class="border"></div>
+    <a class="gamename">GAME NAME...</a>
+
+    <div class="gamepic addpic"></div>
+    <img class="plusicon" src="pic/plus.png"></img>
+    <a class="gamedetail">write detail here</a>
+    <div class="save-button"></div>
+    <a class="save">save</a>
+
+</div>
+<!---->
+{% endblock content %}
