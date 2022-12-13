@@ -4,6 +4,7 @@ from .models import Game, Genre
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from random import randint
 
 # Create your views here.
 
@@ -82,7 +83,12 @@ def detail(request, id=0):
     if id == 0:
         return render(request, "steamClone/Detail.html", {'game': NullGame})
     game = Game.objects.get(pk=id)
-    return render(request, "steamClone/Detail.html", {'game': game})
+    code = randint(100000, 1000000)
+    context = {
+        'game': game,
+        'code': code,
+    }
+    return render(request, "steamClone/Detail.html", context)
 
 
 @login_required()

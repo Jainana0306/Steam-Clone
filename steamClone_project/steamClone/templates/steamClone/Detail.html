@@ -13,15 +13,26 @@
 <h1 class="Detail-Games-Name" style="width: 1000px; height: 60px">
   {{game.name}}
 </h1>
-<h1 class="Detail-Games-detail" style="top: 300px">{{game.genre}}</h1>
+<h1 class="Detail-Games-detail" style="top: 300px">Category: {{game.genre}}</h1>
 <h1 class="Detail-Games-detail" style="top: 350px">{{game.price}}$</h1>
 <a href="{{game.url}}" class="Detail-Games-detail" style="top: 400px"
   >Go to External Game Page</a
 >
+{% if user.is_authenticated %}
+<h3 class="Detail-Games-detail" style="top: 250px">Discount Code: {{code}}</h3>
+{% else %}
+<h3 class="Detail-Games-detail" style="top: 250px">
+  Discount Code:
+  <a href="{% url 'login' %}" class="Detail-Game-detail"
+    >Login to unlock discount code</a
+  >
+</h3>
+{% endif %}
 
 <!--System requirement-->
 <area class="Detail-Games-Sys-Rec" />
-<h1 class="Detail-Games-Sys-Text">Details</h1>
+<h1 class="Detail-Games-Sys-Text">Details/Reviews</h1>
 <h1 class="Detail-Games-Sys-detail">{{game.description}}</h1>
+
 <!---->
 {% endblock content %}
