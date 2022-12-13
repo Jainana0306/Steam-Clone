@@ -28,27 +28,15 @@
 
     <!--TopBar == header-->
     <area class="TopBar-area" />
-    <header class="TopBar">
-      <a class="SteamCloneSide" href="{% url 'main' %}">SteamClone</a>
-      {% if user.is_authenticated %}
-      <!--output userProfile when is authenticated-->
-      <a class="User-circle" href="{% url 'profile' %}"
-        ><area class="User-circle"
-      /></a>
-
-      {% else %}
-      <!--output login and register when not login-->
-      <a class="TopBar-login" href="{% url 'login' %}">LOGIN</a>
-      <a class="TopBar-register" href="{% url 'register' %}">REGISTER</a>
-      {% endif %}
+    <header class="header">
+      <a class="menu-header" href="#">SteamClone</a>
+      <a class="pagename">Add</a>
     </header>
 
     <div>
       <div class="container" style="position: absolute">
         {% if messages %} {% for message in messages %}
-        <div class="alert alert-{{message.tags}}" style="position: absolute">
-          {{message}}
-        </div>
+        <div class="alert alert-{{message.tags}}">{{message}}</div>
         {% endfor %} {% endif %}
       </div>
       {% block content %} {% endblock content %}
@@ -69,7 +57,7 @@
 
       {% if user.is_authenticated %}
       <!--output logout when authenticated-->
-      <a class="bottomBar-logout" href="{% url 'logout' %}"
+      <a class="bottomBar-logout" href="{% url 'main' %}"
         ><img src="{% static 'steamClone/res/Logout.png' %}"
       /></a>
       {% endif %}
