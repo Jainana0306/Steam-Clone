@@ -15,6 +15,7 @@ class NullGame():
     genre = 'null'
     price = 0
     poster = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Empty_set_symbol.svg/640px-Empty_set_symbol.svg.png'
+    url = ''
 
 
 def main(request):

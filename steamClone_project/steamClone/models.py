@@ -17,13 +17,4 @@ class Game(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     price = models.FloatField()
     poster = models.URLField()
-
-
-# class Library(models.Model):
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     game = models.ManyToManyField(Game)
-
-
-# class Cart(models.Model):
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     game = models.ManyToManyField(Game)
+    url = models.URLField()

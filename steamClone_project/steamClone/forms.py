@@ -7,11 +7,14 @@ from django.contrib.auth.forms import UserCreationForm
 class GameForm(forms.ModelForm):
     class Meta:
         model = Game
-        fields = ('name', 'description', 'genre', 'price', 'poster')
+        fields = ('name', 'description', 'genre', 'price', 'poster', 'url')
         labels = {
             'name': 'Game Name',
             'description': 'Description',
+            'genre': 'Genre',
             'price': 'Price',
+            'poster': 'Poster',
+            'url': 'URL'
         }
 
     def __init__(self, *args, **kwargs):
