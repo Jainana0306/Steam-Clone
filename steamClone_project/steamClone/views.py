@@ -8,46 +8,58 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
+class NullGame():
+    id = 0
+    name = 'null'
+    description = 'null'
+    genre = 'null'
+    price = 0
+    poster = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Empty_set_symbol.svg/640px-Empty_set_symbol.svg.png'
+
+
 def main(request):
 
     objectAll = Game.objects.all()
-    nullGame = Game.objects.get(pk=9)
+    nullGame = NullGame
     gameList = [x for x in objectAll]
-    if len(gameList) == 0:
-        context = {
-            'game1': nullGame,
-            'game2': nullGame,
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 1:
-        context = {
-            'game1': gameList[0],
-            'game2': nullGame,
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 2:
-        context = {
-            'game1': gameList[0],
-            'game2': gameList[1],
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 3:
-        context = {
-            'game1': gameList[0],
-            'game2': gameList[1],
-            'game3': gameList[2],
-            'game4': nullGame,
-        }
-    else:
+    try:
         context = {
             'game1': gameList[0],
             'game2': gameList[1],
             'game3': gameList[2],
             'game4': gameList[3],
         }
+    except:
+        try:
+            context = {
+                'game1': gameList[0],
+                'game2': gameList[1],
+                'game3': gameList[2],
+                'game4': nullGame,
+            }
+        except:
+            try:
+                context = {
+                    'game1': gameList[0],
+                    'game2': gameList[1],
+                    'game3': nullGame,
+                    'game4': nullGame,
+                }
+            except:
+                try:
+                    context = {
+                        'game1': gameList[0],
+                        'game2': nullGame,
+                        'game3': nullGame,
+                        'game4': nullGame,
+                    }
+                except:
+                    context = {
+                        'game1': nullGame,
+                        'game2': nullGame,
+                        'game3': nullGame,
+                        'game4': nullGame,
+                    }
     return render(request, 'steamClone/Main.html', context)
 
 
@@ -66,6 +78,8 @@ def register(request):
 
 
 def detail(request, id=0):
+    if id == 0:
+        return render(request, "steamClone/Detail.html", {'game': NullGame})
     game = Game.objects.get(pk=id)
     return render(request, "steamClone/Detail.html", {'game': game})
 
@@ -73,43 +87,46 @@ def detail(request, id=0):
 @login_required()
 def profile(request):
     objectAll = Game.objects.all()
-    nullGame = Game.objects.get(pk=9)
+    nullGame = NullGame
     gameList = [x for x in objectAll]
-    if len(gameList) == 0:
-        context = {
-            'game1': nullGame,
-            'game2': nullGame,
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 1:
-        context = {
-            'game1': gameList[0],
-            'game2': nullGame,
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 2:
-        context = {
-            'game1': gameList[0],
-            'game2': gameList[1],
-            'game3': nullGame,
-            'game4': nullGame,
-        }
-    elif len(gameList) == 3:
-        context = {
-            'game1': gameList[0],
-            'game2': gameList[1],
-            'game3': gameList[2],
-            'game4': nullGame,
-        }
-    else:
+    try:
         context = {
             'game1': gameList[0],
             'game2': gameList[1],
             'game3': gameList[2],
             'game4': gameList[3],
         }
+    except:
+        try:
+            context = {
+                'game1': gameList[0],
+                'game2': gameList[1],
+                'game3': gameList[2],
+                'game4': nullGame,
+            }
+        except:
+            try:
+                context = {
+                    'game1': gameList[0],
+                    'game2': gameList[1],
+                    'game3': nullGame,
+                    'game4': nullGame,
+                }
+            except:
+                try:
+                    context = {
+                        'game1': gameList[0],
+                        'game2': nullGame,
+                        'game3': nullGame,
+                        'game4': nullGame,
+                    }
+                except:
+                    context = {
+                        'game1': nullGame,
+                        'game2': nullGame,
+                        'game3': nullGame,
+                        'game4': nullGame,
+                    }
     return render(request, 'steamClone/Profile-Login.html', context)
 
 
