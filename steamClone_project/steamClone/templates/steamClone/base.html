@@ -80,9 +80,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'profile' %}"><img src="{% static 'steamClone/res/Library.png' %}" style="width: 35px; height: 35px;"></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'cart' %}"><img src="{% static 'steamClone/res/Cart.png' %}" style="width: 35px; height: 35px;"></a>
-            </li>
           </ul>
 
           {% if user.is_authenticated %}
