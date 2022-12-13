@@ -4,14 +4,21 @@
 <!---->
 {% block content %}
 <!---->
-<!--Background image-->
+<!--RectangleBG-->
 <area class="BG-Rect" />
-<div class="img-login"></div>
-<img class="img-main" src="{% static 'steamClone/res/MainBG.webp' %}" />
-<area class="main-blur" />
+<area class="Profile-BG-Rectangle" />
+<!--Info-->
+<area class="Profile-user-circle" />
+<h1 class="Profile-text-welcome">Welcome ,</h1>
 
-<!--Games-->
-<h1 class="Games-text">Games</h1>
+{% if user.is_authenticated %}
+<!--output username-->
+<h1 class="Profile-text-username">Username</h1>
+{% else %}
+<h1 class="Profile-text-username">Anonymous</h1>
+{% endif %}
+
+<h1 class="Games-text">My Games</h1>
 
 <!--Position การวางเกม-->
 <a href="Detail.html"><area class="Games-Rectangle-1" /></a>

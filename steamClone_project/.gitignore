@@ -2,18 +2,15 @@
 *.log
 *.pot
 *.pyc
-/__pycache__/
+__pycache__
 db.sqlite3
 media
-
 
 # Backup files # 
 *.bak 
 
 # If you are using PyCharm # 
 # User-specific stuff
-.steamClone_project/steamClone/__pycache__
-.steamClone_project/steamClone_project/__pycache__
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml

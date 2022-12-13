@@ -1,5 +1,7 @@
 {% extends "steamClone/base.html" %}
 <!---->
+{% load crispy_forms_tags %}
+<!---->
 {% load static %}
 <!---->
 {% block content %}
@@ -11,34 +13,24 @@
 
 <!--LoginBar-->
 <area class="loginRectangle" />
-<h1 class="loginText-username">USERNAME</h1>
-<div class="login-input-username">
-  <input
-    type="text"
-    name="q"
-    size="51"
-    class="form-control form-control-lg"
-    placeholder="Type username..."
-  />
-</div>
-<h1 class="loginText-password">PASSWORD</h1>
-<div class="login-input-password">
-  <input
-    type="text"
-    name="q"
-    size="51"
-    class="form-control form-control-lg"
-    placeholder="Type password..."
-  />
-</div>
-<a href="https://www.youtube.com/watch?v=QxKTOXfT1LQ"
-  ><h1 class="loginText-forgot">FORGOT PASSWORD?</h1></a
+<link rel="stylesheet" href="" />
+<div
+  class="container"
+  style="position: absolute; top: 400px; width: 600px; left: 800px"
 >
-<input
-  type="submit"
-  name="btnK"
-  value="SIGN-IN"
-  class="login-button-rectangle"
-/>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">{{ form|crispy }}</fieldset>
+    <div class="form-group" id="signup-button">
+      <button class="btn btn-success">Sign In</button>
+    </div>
+    <div class="form-group">
+      <small class="text-muted ml-3"
+        >Don't have an account yet?
+        <a href="{% url 'register' %}">Sign Up Today</a></small
+      >
+    </div>
+  </form>
+</div>
 <!---->
 {% endblock content %}

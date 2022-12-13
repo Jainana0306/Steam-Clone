@@ -1,0 +1,33 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+<header class="header">
+    <a class="menu-header" href="{% url 'main' %}">SteamClone</a>
+    <a class="pagename">Edit</a>
+</header>
+<div class="content">
+    <a class="fontsizeedit addtext" href="{% url 'add' %}">Add</a>
+    <a class="fontsizeedit deletetext" href="{% url 'delete' %}">Delete</a>
+
+    <div class="border"></div>
+    <a class="maintext">Games</a>
+
+    <div class="gamepic editpic1">
+        <a class="gamenameedit">name</a>
+    </div>
+    <div class="gamepic editpic2">
+        <a class="gamenameedit">name</a>
+    </div>
+    <div class="gamepic editpic3">
+        <a class="gamenameedit">name</a>
+    </div>
+    <div class="gamepic editpic4">
+        <a class="gamenameedit">name</a>
+    </div>
+
+</div>
+<!---->
+{% endblock content %}

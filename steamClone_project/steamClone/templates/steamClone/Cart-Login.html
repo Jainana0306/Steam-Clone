@@ -1,0 +1,33 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+
+<h1 class="Cart-text">YOUR CART</h1>
+<!--Games Cart position-->
+<area class="Cart-Games-Rec-1" />
+<a class="Cart-Games-Pics-1" href="Detail.html"></a>
+<h1 class="Cart-Games-Name-1" href="Detail.html">NAME</h1>
+
+<area class="Cart-Games-PriceRec-1" />
+<h1 class="Cart-Games-PriceText-1">Price : THB</h1>
+<img
+  class="Cart-Games-Close-1"
+  src="{% static 'steamClone/res/close-symbol.png' %}"
+/>
+
+<area class="Cart-Games-Rec-2" />
+<a class="Cart-Games-Pics-2" href="Detail.html"></a>
+<h1 class="Cart-Games-Name-2" href="Detail.html">NAME</h1>
+
+<area class="Cart-Games-PriceRec-2" />
+<h1 class="Cart-Games-PriceText-2">Price : THB</h1>
+<img
+  class="Cart-Games-Close-2"
+  src="{% static 'steamClone/res/close-symbol.png' %}"
+/>
+
+<!---->
+{% endblock content %}
