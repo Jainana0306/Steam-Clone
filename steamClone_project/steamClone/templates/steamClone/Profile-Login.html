@@ -13,7 +13,7 @@
 
 {% if user.is_authenticated %}
 <!--output username-->
-<h1 class="Profile-text-username">Username</h1>
+<h1 class="Profile-text-username">{{user.username}}</h1>
 {% else %}
 <h1 class="Profile-text-username">Anonymous</h1>
 {% endif %}

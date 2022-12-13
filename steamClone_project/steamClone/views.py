@@ -31,11 +31,15 @@ def profile(request):
     return render(request, 'steamClone/Profile-Login.html')
 
 
+@login_required()
 def cart(request):
     return render(request, 'steamClone/Cart-Login.html')
 
 
+@login_required()
 def add(request, id=0):
+    if not request.user.is_superuser:
+        return redirect('/')
     if request.method == "GET":
         if id == 0:
             form = GameForm()
@@ -54,18 +58,27 @@ def add(request, id=0):
         return redirect('/gameList')
 
 
+@login_required()
 def gameList(request):
+    if not request.user.is_superuser:
+        return redirect('/')
     context = {'gameList': Game.objects.all()}
     return render(request, 'steamClone/Edit-Admin.html', context)
 
 
+@login_required()
 def delete(request, id):
+    if not request.user.is_superuser:
+        return redirect('/')
     game = Game.objects.get(pk=id)
     game.delete()
     return redirect('/gameList')
 
 
+@login_required()
 def genreAdd(request, id=0):
+    if not request.user.is_superuser:
+        return redirect('/')
     if request.method == "GET":
         if id == 0:
             form = GenreForm()
@@ -84,7 +97,10 @@ def genreAdd(request, id=0):
         return redirect('/gameList')
 
 
+@login_required()
 def genreDelete(request, id):
+    if not request.user.is_superuser:
+        return redirect('/')
     genre = Genre.objects.get(pk=id)
     genre.delete()
     return redirect('/gameList')

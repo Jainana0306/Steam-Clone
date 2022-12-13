@@ -30,7 +30,13 @@
     <area class="TopBar-area" />
     <header class="TopBar">
       <a class="SteamCloneSide" href="{% url 'main' %}">SteamClone</a>
-      {% if user.is_authenticated %}
+      {% if user.is_superuser %}
+      <a
+        href="{% url 'list' %}"
+        style="position: absolute; left: 1337px; top: 14px"
+        >Admin</a
+      >
+      {% elif user.is_authenticated %}
       <!--output userProfile when is authenticated-->
       <a class="User-circle" href="{% url 'profile' %}"
         ><area class="User-circle"
