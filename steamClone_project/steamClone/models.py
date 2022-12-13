@@ -19,11 +19,11 @@ class Game(models.Model):
     poster = models.URLField()
 
 
-class Library(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    game = models.ManyToManyField(Game)
+# class Library(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     game = models.ManyToManyField(Game)
 
 
-class Cart(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    game = models.ManyToManyField(Game)
+# class Cart(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     game = models.ManyToManyField(Game)
