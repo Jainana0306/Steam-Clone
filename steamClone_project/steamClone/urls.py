@@ -10,6 +10,9 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('cart/', views.cart, name='cart'),
     path('add/', views.add, name='add'),
-    path('edit/', views.edit, name='edit'),
-    path('delete/', views.delete, name='delete'),
+    path('add/<int:id>', views.add, name='edit'),
+    path('delete/<int:id>', views.delete, name='delete'),
+    path('gameList/', views.gameList, name='list'),
+    path('genreAdd/', views.genreAdd, name='genreAdd'),
+    path('genreDelete/<int:id>', views.genreDelete, name='genreDelete'),
 ]

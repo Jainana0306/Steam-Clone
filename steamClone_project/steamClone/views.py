@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .forms import GameForm, UserRegisterForm
-from .models import Game
+from .forms import GameForm, UserRegisterForm, GenreForm
+from .models import Game, Genre
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -35,13 +35,56 @@ def cart(request):
     return render(request, 'steamClone/Cart-Login.html')
 
 
-def add(request):
-    return render(request, 'steamClone/Add-Admin.html')
+def add(request, id=0):
+    if request.method == "GET":
+        if id == 0:
+            form = GameForm()
+        else:
+            game = Game.objects.get(pk=id)
+            form = GameForm(instance=game)
+        return render(request, "steamClone/Add-Admin.html", {'form': form})
+    else:
+        if id == 0:
+            form = GameForm(request.POST)
+        else:
+            game = Game.objects.get(pk=id)
+            form = GameForm(request.POST, instance=game)
+        if form.is_valid():
+            form.save()
+        return redirect('/gameList')
 
 
-def edit(request):
-    return render(request, 'steamClone/Edit-Admin.html')
+def gameList(request):
+    context = {'gameList': Game.objects.all()}
+    return render(request, 'steamClone/Edit-Admin.html', context)
 
 
-def delete(request):
-    return render(request, 'steamClone/Delete-Admin.html')
+def delete(request, id):
+    game = Game.objects.get(pk=id)
+    game.delete()
+    return redirect('/gameList')
+
+
+def genreAdd(request, id=0):
+    if request.method == "GET":
+        if id == 0:
+            form = GenreForm()
+        else:
+            genre = Genre.objects.get(pk=id)
+            form = GenreForm(instance=genre)
+        return render(request, "steamClone/Genre-Admin.html", {'form': form})
+    else:
+        if id == 0:
+            form = GenreForm(request.POST)
+        else:
+            genre = Genre.objects.get(pk=id)
+            form = GenreForm(request.POST, instance=genre)
+        if form.is_valid():
+            form.save()
+        return redirect('/gameList')
+
+
+def genreDelete(request, id):
+    genre = Genre.objects.get(pk=id)
+    genre.delete()
+    return redirect('/gameList')
