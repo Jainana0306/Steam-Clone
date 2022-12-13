@@ -1,0 +1,24 @@
+{% extends "steamClone/base.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+<!--Background image-->
+<!--RectangleBG-->
+<area class="Detail-BG-Rectangle" />
+
+<!--Info-->
+<img class="Detail-Games-Rectangle" src="{{game.poster}}" />
+<h1 class="Detail-Games-Name" style="width: 1000px; height: 60px">
+  {{game.name}}
+</h1>
+<h1 class="Detail-Games-detail" style="top: 300px">{{game.genre}}</h1>
+<h1 class="Detail-Games-detail" style="top: 350px">{{game.price}}$</h1>
+
+<!--System requirement-->
+<area class="Detail-Games-Sys-Rec" />
+<h1 class="Detail-Games-Sys-Text">Details</h1>
+<h1 class="Detail-Games-Sys-detail">{{game.description}}</h1>
+<!---->
+{% endblock content %}

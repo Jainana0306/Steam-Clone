@@ -18,16 +18,43 @@
 <h1 class="Profile-text-username">Anonymous</h1>
 {% endif %}
 
-<h1 class="Games-text">My Games</h1>
+<h1 class="Games-text">Games</h1>
 
 <!--Position การวางเกม-->
-<a href="Detail.html"><area class="Games-Rectangle-1" /></a>
-<a href="Detail.html"><h1 class="Games-Rectangle-Text-1">name</h1></a>
-<a href="Detail.html"><area class="Games-Rectangle-2" /></a>
-<a href="Detail.html"><h1 class="Games-Rectangle-Text-2">name</h1></a>
-<a href="Detail.html"><area class="Games-Rectangle-3" /></a>
-<a href="Detail.html"><h1 class="Games-Rectangle-Text-3">name</h1></a>
-<a href="Detail.html"><area class="Games-Rectangle-4" /></a>
-<a href="Detail.html"><h1 class="Games-Rectangle-Text-4">name</h1></a>
+<a href="{% url 'detail' game1.id %}"
+  ><img class="Games-Rectangle-1" src="{{game1.poster}}"
+/></a>
+<a href="{% url 'detail' game1.id %}"
+  ><h1 class="Games-Rectangle-Text-1" style="width: 200px">
+    {{game1.name}}
+  </h1></a
+>
+
+<a href="{% url 'detail' game2.id %}"
+  ><img class="Games-Rectangle-2" src="{{game2.poster}}"
+/></a>
+<a href="{% url 'detail' game2.id %}"
+  ><h1 class="Games-Rectangle-Text-2" style="width: 200px">
+    {{game2.name}}
+  </h1></a
+>
+
+<a href="{% url 'detail' game3.id %}"
+  ><img class="Games-Rectangle-3" src="{{game3.poster}}"
+/></a>
+<a href="{% url 'detail' game3.id %}"
+  ><h1 class="Games-Rectangle-Text-3" style="width: 200px">
+    {{game3.name}}
+  </h1></a
+>
+
+<a href="{% url 'detail' game4.id %}"
+  ><img class="Games-Rectangle-4" src="{{game4.poster}}"
+/></a>
+<a href="{% url 'detail' game4.id %}"
+  ><h1 class="Games-Rectangle-Text-4" style="width: 200px">
+    {{game4.name}}
+  </h1></a
+>
 <!---->
 {% endblock content %}

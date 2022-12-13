@@ -9,7 +9,46 @@ from django.contrib.auth.decorators import login_required
 
 
 def main(request):
-    return render(request, 'steamClone/Main.html')
+
+    objectAll = Game.objects.all()
+    nullGame = Game.objects.get(pk=9)
+    gameList = [x for x in objectAll]
+    if len(gameList) == 0:
+        context = {
+            'game1': nullGame,
+            'game2': nullGame,
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 1:
+        context = {
+            'game1': gameList[0],
+            'game2': nullGame,
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 2:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 3:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': gameList[2],
+            'game4': nullGame,
+        }
+    else:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': gameList[2],
+            'game4': gameList[3],
+        }
+    return render(request, 'steamClone/Main.html', context)
 
 
 def register(request):
@@ -26,9 +65,52 @@ def register(request):
     return render(request, 'steamClone/Register.html', {'form': form})
 
 
+def detail(request, id=0):
+    game = Game.objects.get(pk=id)
+    return render(request, "steamClone/Detail.html", {'game': game})
+
+
 @login_required()
 def profile(request):
-    return render(request, 'steamClone/Profile-Login.html')
+    objectAll = Game.objects.all()
+    nullGame = Game.objects.get(pk=9)
+    gameList = [x for x in objectAll]
+    if len(gameList) == 0:
+        context = {
+            'game1': nullGame,
+            'game2': nullGame,
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 1:
+        context = {
+            'game1': gameList[0],
+            'game2': nullGame,
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 2:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': nullGame,
+            'game4': nullGame,
+        }
+    elif len(gameList) == 3:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': gameList[2],
+            'game4': nullGame,
+        }
+    else:
+        context = {
+            'game1': gameList[0],
+            'game2': gameList[1],
+            'game3': gameList[2],
+            'game4': gameList[3],
+        }
+    return render(request, 'steamClone/Profile-Login.html', context)
 
 
 @login_required()
