@@ -1,7 +1,5 @@
 from django.db import models
-from django.conf import settings
-from django.contrib.auth import get_user_model
-from django.db.models.signals import post_save
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -19,3 +17,13 @@ class Game(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     price = models.FloatField()
     poster = models.URLField()
+
+
+class Library(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    game = models.ManyToManyField(Game)
+
+
+class Cart(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    game = models.ManyToManyField(Game)
